@@ -4,6 +4,8 @@ use warnings;
 use WWW::Curl::Easy;
 use WWW::Curl::Multi;
 use Plack::Handler::FCGI;
+use Plack::Request;
+use CGI::Carp qw(fatalsToBrowser);
 
 my $response ;
 sub bprint 

@@ -1,0 +1,16 @@
+# lighttpd -f config.cnf  -D 
+server.document-root       = "/var/www/"
+server.port               = 8082
+server.errorlog            = "error.log"
+static-file.exclude-extensions = ( ".php", ".pl", ".fcgi" )
+server.modules += ( "mod_fastcgi" )
+$HTTP["url"] =~ "^/[^/]*$" {
+    fastcgi.server = (
+        "/" => ((
+            "socket" => "/tmp/myapp.sock",
+            "bin-path" => "../public_html/dispatch.fcgi",
+            "check-local" => "disable",
+            "allow-x-send-file" => "enable",
+        )),
+    )
+}
