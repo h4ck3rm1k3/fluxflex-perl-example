@@ -191,4 +191,4 @@ my $app = sub {
     return [200, ['Content-Length' => length($body)], [$body]];
 };
 
-Plack::Handler::FCGI->new->run($app);
+Plack::Handler::FCGI->new( )->run($app);

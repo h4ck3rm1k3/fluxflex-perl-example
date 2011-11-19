@@ -1,3 +1,6 @@
+[permission]
+public_html/dispatch.fcgi          755
+
 [setup]
 /usr/local/bin/cpanm -l extlib WWW::Curl::Easy
 /usr/local/bin/cpanm -l extlib WWW::Curl::Multi
