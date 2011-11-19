@@ -5,3 +5,4 @@ public_html/dispatch.fcgi          755
 /usr/local/bin/cpanm -l extlib WWW::Curl::Easy
 /usr/local/bin/cpanm -l extlib WWW::Curl::Multi
 /usr/local/bin/cpanm -l extlib Plack::Handler::FCGI
+/usr/local/bin/cpanm -l extlib Plack::Request
