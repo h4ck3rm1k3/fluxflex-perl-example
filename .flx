@@ -1,2 +1,4 @@
 [setup]
-/usr/local/bin/cpanm -l extlib DateTime
+/usr/local/bin/cpanm -l extlib WWW::Curl::Easy
+/usr/local/bin/cpanm -l extlib WWW::Curl::Multi
+/usr/local/bin/cpanm -l extlib Plack::Handler::FCGI

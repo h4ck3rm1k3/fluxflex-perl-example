@@ -3,7 +3,6 @@ use strict;
 use warnings;
 use WWW::Curl::Easy;
 use WWW::Curl::Multi;
-use DateTime;
 use Plack::Handler::FCGI;
 
 my $response ;
